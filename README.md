@@ -27,14 +27,14 @@ I have tested this and it works with:
 Notes
 -----
 If your running Ubuntu you will need to install whats below if you want lockscreen detection.
-*sudo apt install gnome-screensaver*
+[`sudo apt install gnome-screensaver`]
 
 
 Commands
 -----
 Some commands you may want to try are:
-*-start* will start the when you run within terminal
-*-auto* will start automation the when you run within terminal
+[`-start`] will start the when you run within terminal
+[`-auto`] will start automation the when you run within terminal
 
 License
 -----------
