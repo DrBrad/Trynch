@@ -3,6 +3,9 @@ Trynch
 
 Trynch is a motion / sound detection system that can run scripts in the case that the sensors are activated. A use case that you may want to use this for is in the case that you enjoy using your laptop at the coffee shop and have to go to the bathroom, you wont have to worry about anyone stealing your laptop.
 
+If you want to test this out for yourself download the JAR here: [Trynch.jar](https://github.com/DrBrad/Trynch/blob/main/out/artifacts/Trynch_jar/Trynch.jar?raw=true)
+
+
 Sensors
 -----
 - [x] Webcam sensors
@@ -12,6 +15,12 @@ Sensors
 - [ ] Gyroscope sensor
 
 When a sensor picks anything up you can set it to beep or shutdown your PC. With automation we can see if you are close to your computer without you having to start this every time.
+
+Commands
+-----
+Some commands you may want to try are:
+*-start* will start the when you run within terminal
+*-auto* will start automation the when you run within terminal
 
 License
 -----------
