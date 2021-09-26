@@ -42,7 +42,7 @@ public class Main {
 
         Activity activity;
 
-        if(!readBooleanPreference("firstTime", false)){
+        if(readBooleanPreference("firstTime", false)){
             mactivity = new MainActivity();
             activity = new Activity(mactivity);
 
