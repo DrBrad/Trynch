@@ -1,0 +1,24 @@
+[
+    {
+        "t":"Run",
+        "t2":"Stop",
+        "q":0
+    },
+    {
+        "t":"Start Autonomy",
+        "t2":"Stop Autonomy",
+        "q":0
+    },
+    {
+        "t":"Settings",
+        "q":1
+    },
+    {
+        "t":"Logs",
+        "q":1
+    },
+    {
+        "t":"Plugins",
+        "q":1
+    }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "t":"Set Delay Time",
+    "id":"timeDelay",
+    "f":0,
+    "p":0,
+    "q":1
+  },
+  {
+    "t":"Toggles",
+    "q":0
+  },
+  {
+    "t":"Toggle when device Sleeps or Locks",
+    "id":"lockDetection",
+    "f":true,
+    "q":3
+  },
+  {
+    "t":"Toggle when phone near by",
+    "id":"phoneDetection",
+    "f":true,
+    "q":3
+  },
+  {
+    "t":"Phone local IP address",
+    "d":"Set your phones IP address so we know when your near.",
+    "id":"phoneIP",
+    "f":"192.168.0.2",
+    "p":1,
+    "q":2
+  },
+  {
+    "t":"Sensors",
+    "q":0
+  },
+  {
+    "t":"Select Camera & Microphone",
+    "p":2,
+    "q":1
+  },
+  {
+    "t":"Camera Motion Detection",
+    "id":"cameraMotionDetection",
+    "f":true,
+    "q":3
+  },
+  {
+    "t":"Camera Sensitivity",
+    "id":"cameraSensitivity",
+    "f":40,
+    "p":0,
+    "q":1
+  },
+  {
+    "t":"Sound Detection",
+    "id":"soundDetection",
+    "f":true,
+    "q":3
+  },
+  {
+    "t":"Sound Sensitivity",
+    "id":"soundSensitivity",
+    "f":70,
+    "p":0,
+    "q":1
+  },
+  {
+    "t":"Key Press Detection",
+    "d":"(Windows 10 doesn't work when screen is locked)",
+    "id":"keyDetection",
+    "f":true,
+    "q":4
+  },
+  {
+    "t":"Actions",
+    "q":0
+  },
+  {
+    "t":"Shutdown on detection",
+    "id":"shutdownAction",
+    "d":"If any of the enabled sensors detect something, shutdown the device",
+    "f":true,
+    "q":4
+  },
+  {
+    "t":"Beeping sound on detection",
+    "id":"soundAction",
+    "d":"If any of the enabled sensors detect something, make beeping sound",
+    "f":false,
+    "q":4
+  },
+  {
+    "t":"Notifications",
+    "q":0
+  },
+  {
+    "t":"Notification Time Interval",
+    "d":"Only sends notifications at configured interval",
+    "id":"notificationInterval",
+    "f":3,
+    "p":0,
+    "q":2
+  },
+  {
+    "t":"Save Logs",
+    "d":"Save logs of any detections, in case the application closes",
+    "id":"saveLogs",
+    "f":true,
+    "q":4
+  },
+  {
+    "t":"SMS Number",
+    "d":"Phone number to send details to",
+    "id":"smsNumber",
+    "f":"(123) 456-7890",
+    "p":1,
+    "q":2
+  },
+  {
+    "t":"About",
+    "q":0
+  },
+  {
+    "t":"Build Version",
+    "d":"1.0 Alpha",
+    "q":-1
+  },
+  {
+    "t":"Author",
+    "d":"DrBrad",
+    "q":-1
+  }
+]
