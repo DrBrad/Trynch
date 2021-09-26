@@ -12,9 +12,23 @@ Sensors
 - [x] Microphone sensors
 - [x] Keyboard detection
 - [x] Phone proximity detection
+- [x] LockScreen detection
 - [ ] Gyroscope sensor
 
 When a sensor picks anything up you can set it to beep or shutdown your PC. With automation we can see if you are close to your computer without you having to start this every time.
+
+Tested
+-----
+I have tested this and it works with:
+- [x] Ubuntu
+- [x] Windows
+- [ ] Mac UNTESTED
+
+Notes
+-----
+If your running Ubuntu you will need to install whats below if you want lockscreen detection.
+*sudo apt install gnome-screensaver*
+
 
 Commands
 -----
