@@ -33,7 +33,9 @@ If your running Ubuntu you will need to install whats below if you want lockscre
 Commands
 -----
 Some commands you may want to try are:
+
 [`-start`] will start the when you run within terminal
+
 [`-auto`] will start automation the when you run within terminal
 
 License
