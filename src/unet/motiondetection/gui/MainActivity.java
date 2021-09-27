@@ -18,7 +18,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -150,7 +150,14 @@ public class MainActivity extends Fragment implements ScriptListener {
                         break;
 
                     case 3:
-
+                        try{
+                            File f = new File(new File("").getAbsolutePath()+File.separator+"Trynch");
+                            if(f.exists()){
+                                Desktop.getDesktop().open(f);
+                            }
+                        }catch(IOException ex){
+                            ex.printStackTrace();
+                        }
                         break;
                 }
 

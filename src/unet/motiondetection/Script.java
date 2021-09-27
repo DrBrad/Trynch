@@ -42,7 +42,7 @@ public class Script implements SoundListener, WebcamMotionListener, NativeKeyLis
 
     public void start(boolean delay){
         if(!running){
-            SimpleDateFormat format = new SimpleDateFormat("dd-MM-YY-hh:mm:ss");
+            SimpleDateFormat format = new SimpleDateFormat("dd-MM-YY-hh-mm-ss");
             logFolder = format.format(new Date().getTime());
             json = new JSONArray();
 
@@ -171,15 +171,14 @@ public class Script implements SoundListener, WebcamMotionListener, NativeKeyLis
     @Override
     public void motionDetected(WebcamMotionEvent wme){
         if(script.isFirstImage() && wme.getPoints().size() > script.getMaxPoints()){
-            /*
-            File f = new File(new Date().getTime()+".png");
-            try{
-                System.out.println(wme.getCurrentImage().getWidth()+"  "+wme.getCurrentImage().getHeight());
-                ImageIO.write(wme.getCurrentImage(), "PNG", new File(new Date().getTime()+".png"));
-            }catch(IOException e){
-                e.printStackTrace();
+            BufferedImage image = wme.getCurrentImage();
+            Graphics g = image.getGraphics();
+            g.setColor(Color.GREEN);
+
+            for(Point p : wme.getPoints()){
+                g.drawRect(p.x-3, p.y-3, 6, 6);
             }
-            */
+
             JSONObject j = new JSONObject("{\"f\":"+mactivity.imageSize()+",\"t\":"+new Date().getTime()+",\"q\":1}");
             json.put(j);
             mactivity.getModel().addElement(j);

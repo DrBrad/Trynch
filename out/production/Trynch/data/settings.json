@@ -31,6 +31,20 @@
     "q":2
   },
   {
+    "t":"Toggle with schedule",
+    "id":"scheduleDetection",
+    "f":false,
+    "q":3
+  },
+  {
+    "t":"Set Schedule",
+    "d": "Start and stop automation or script at a specific time.",
+    "id":"scheduleDetails",
+    "f":"",
+    "p":3,
+    "q":2
+  },
+  {
     "t":"Sensors",
     "q":0
   },
@@ -108,14 +122,6 @@
     "id":"saveLogs",
     "f":true,
     "q":4
-  },
-  {
-    "t":"SMS Number",
-    "d":"Phone number to send details to",
-    "id":"smsNumber",
-    "f":"(123) 456-7890",
-    "p":1,
-    "q":2
   },
   {
     "t":"About",

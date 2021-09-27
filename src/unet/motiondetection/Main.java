@@ -9,6 +9,7 @@ import unet.motiondetection.gui.activity.Activity;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.IOException;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -21,13 +22,14 @@ public class Main {
     MAKE THE APP INTERFACE
     */
 
-    // sudo apt install gnome-screensaver
-
     public static Script script;
     public static Autonomy autonomy;
+    public static ScheduledTask scheduledTask;
     public static MainActivity mactivity;
 
     public static void main(String[] args)throws IOException {
+        scheduledTask = new ScheduledTask();
+
         Logger logger = Logger.getLogger(GlobalScreen.class.getPackage().getName());
         logger.setLevel(Level.OFF);
 

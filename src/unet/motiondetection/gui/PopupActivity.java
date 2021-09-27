@@ -55,12 +55,10 @@ public class PopupActivity extends Fragment {
 
             @Override
             public void keyPressed(KeyEvent e){
-
             }
 
             @Override
             public void keyReleased(KeyEvent e){
-
             }
         });
 

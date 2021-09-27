@@ -165,6 +165,15 @@ public class SettingsActivity extends Fragment {
                             activity = new Activity(new WebcamActivity());
                             activity.setMinimumSize(new Dimension(1000, 600));
                             activity.setSize(new Dimension(1000, 600));
+
+                        }else if(json.getInt("p") == 3){
+                            //b.putString("t", json.getString("t"));
+                            //b.putString("f", readStringPreference(json.getString("id"), json.getString("f")));
+                            //b.putString("id", json.getString("id"));
+
+                            activity = new Activity(new DateActivity(), b);
+                            activity.setSize(new Dimension(400, 400));
+                            activity.getFrame().setResizable(false);
                         }
 
                         disableBack = true;
